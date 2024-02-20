@@ -30,16 +30,7 @@
       <input type="date" id="fechaFinalizacion" [(ngModel)]="fechFin" name="fechFin" required>
       <hr>
   
-      <label class="text" id="grades"  for="level">Nivel:</label>
-        <select id="gradesOp">
-          <option   disabled selected>Selecciona el nivel del torneo:</option>
-          <option value="1E1" class="grades" >1ro, 2do y 3ro de Bachillerato</option>
-          <option value="1E1" class="grades" >1ro Bachillerato</option>
-          <option value="1E2" class="grades" >2do Bachillerato</option>
-          <option value="1A1" class="grades" >3ro Bachillerato</option>
-
-        </select>
-        <hr>
+  
       <input class="inc" type="submit" (click)="addTournament()" value="Crear Torneo">
         <input routerLink="/volley-adm" class="reg" type="submit" value="Cancelar">
 
