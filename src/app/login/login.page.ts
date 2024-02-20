@@ -52,6 +52,8 @@ export class LoginPage implements OnInit {
           const idEstudiante = estudianteEncontrado.id;
         } 
 
+   
+
         const nombre= res.find((estudiante: any) => estudiante.email === this.email).nombre;
         const apellido= res.find((estudiante: any) => estudiante.email === this.email).apellido;
         console.log(nombre);

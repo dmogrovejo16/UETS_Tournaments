@@ -24,7 +24,7 @@ export class ProfileAdmPage implements OnInit {
 
   ngOnInit() {
     this.area=localStorage.getItem("area");
-    this.nombreCompleto=this.nombreCapitalizado+" "+this.apellidoCapitalizado
+    this.nombreCompleto=this.nombre+" "+this.apellido
   }
 
   async presentToastGood(message: string) {

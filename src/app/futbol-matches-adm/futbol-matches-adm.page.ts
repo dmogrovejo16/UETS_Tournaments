@@ -23,7 +23,7 @@ partidos: any[] = [];
 
   ngOnInit() {
 
-    this.nombreTorneo = localStorage.getItem("NombreTorneo")?.toUpperCase();
+    this.nombreTorneo = localStorage.getItem("NombreTorneo");
     
     this._apiService.getMatchesFirst().subscribe((res:any)=>{
 

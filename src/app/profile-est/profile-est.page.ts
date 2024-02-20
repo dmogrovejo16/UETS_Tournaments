@@ -12,7 +12,7 @@ export class ProfileEstPage implements OnInit {
   curso:any;
 
   esp: string = " ";
-  nombreCapitalizado: string = localStorage.getItem("Name")! + " " +localStorage.getItem("Last Name")!;
+  nombreCapitalizado: any = localStorage.getItem("Name");
   email: string| null = localStorage.getItem("Email");
   nombreCompleto:any;
   apellido: string = localStorage.getItem("Last Name")!;
@@ -24,7 +24,7 @@ export class ProfileEstPage implements OnInit {
 
 
   ngOnInit() {
-    this.nombreCompleto=this.nombreCapitalizado+" "+this.apellidoCapitalizado
+    this.nombreCompleto=this.nombreCapitalizado+" "+this.apellido
     this.curso=localStorage.getItem("curso");
 
 }
