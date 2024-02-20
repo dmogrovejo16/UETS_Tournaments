@@ -27,7 +27,6 @@ export class BasquetMatchesAdmPage implements OnInit {
 
 
         },(error: any)=>{ 
-            alert('ERROR');
             console.log("ERROR ===", error);
           })
 

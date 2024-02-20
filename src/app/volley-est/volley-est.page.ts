@@ -23,7 +23,6 @@ export class VolleyEstPage implements OnInit {
       console.log(res);
       this.torneos=res;
         },(error: any)=>{ 
-            alert('ERROR');
             console.log("ERROR ===", error);
           })
   }

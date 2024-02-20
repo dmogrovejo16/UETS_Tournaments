@@ -52,7 +52,6 @@ export class InputAreaAdmPage implements OnInit {
 
   
     },(error: any)=>{ 
-      alert('ERROR');
       console.log("ERROR ===", error);
     })
   }else{

@@ -35,7 +35,6 @@ console.log(this.partidos);
 
      
         },(error: any)=>{ 
-            alert('ERROR');
             console.log("ERROR ===", error);
           })
 

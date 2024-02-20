@@ -26,7 +26,6 @@ export class BasquetMatchesThirdAdmPage implements OnInit {
       console.log(res);
       this.partidos = res.filter((partido: any) => partido.nombreTorneo == this.nombreTorneo && partido.disciplina == "Basquetball");
         },(error: any)=>{ 
-            alert('ERROR');
             console.log("ERROR ===", error);
           })
 

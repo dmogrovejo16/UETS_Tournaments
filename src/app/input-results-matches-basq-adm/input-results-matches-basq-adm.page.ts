@@ -49,12 +49,10 @@ resultMatch(){
   this._apiService.resultMatch(data).subscribe((res:any)=>{
 
     console.log("SUCCESS ===", res);
-    alert('SUCCESS');
     this.router.navigate(['/basquet-matches-adm']);
     this.presentToastGood('Resultado ingresado con éxito');
 
   },(error: any)=>{ 
-    alert(error);
     console.log("ERROR ===", error);
     this.presentToastBad('El resultado no pudo ser ingresado');
   })

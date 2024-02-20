@@ -97,7 +97,6 @@ this.presentToastBad("Ya existe un usuario con ese correo");
     
 
           console.log("SUCCESS ===", res);
-        alert('SUCCESS');
           console.log(this.name,this.lastName,this.password,this.email);
      
         
@@ -109,7 +108,6 @@ this.presentToastBad("Ya existe un usuario con ese correo");
     
     
     },(error: any)=>{ 
-      alert(error);
       console.log("ERROR ===", error);
     })
     
@@ -122,13 +120,11 @@ this.presentToastBad("Ya existe un usuario con ese correo");
     }
         
       },(error: any)=>{ 
-        alert(error);
         console.log("ERROR ===", error);
       })
       }
 
     },(error: any)=>{ 
-      alert('ERROR');
       console.log("ERROR ===", error);
     })
 

@@ -57,11 +57,9 @@ if(fechaInicio < fechaFin){
       this.fechIni='';
       this.fechFin='';
       this.idAdmCreator='';
-      alert('SUCCESS');
       this.router.navigate(['/volley-adm']);
       this.presentToast('Torneo creado exitosamente');
   },(error: any)=>{ 
-    alert('ERROR');
     console.log("ERROR ===", error);
   })
   

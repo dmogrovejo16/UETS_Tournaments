@@ -53,7 +53,6 @@ ingresarCurso(){
 localStorage.setItem("curso", this.curso);
 
   },(error: any)=>{ 
-    alert('ERROR');
     console.log("ERROR ===", error);
   })
 }else if (this.curso!=null && this.curso.length>3){

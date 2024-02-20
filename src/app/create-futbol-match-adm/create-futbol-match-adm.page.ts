@@ -95,12 +95,10 @@ this.nombreTorneo=localStorage.getItem('NombreTorneo');
     this._apiService.addMatch(data).subscribe((res:any)=>{
 
       console.log("SUCCESS ===", res);
-      alert('SUCCESS');
       this.router.navigate(['/futbol-matches-adm']);
       this.presentToastGood('Partido creado con éxito');
 
     },(error: any)=>{ 
-      alert(error);
       console.log("ERROR ===", error);
     })
   } else {

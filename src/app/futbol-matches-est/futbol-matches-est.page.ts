@@ -29,7 +29,6 @@ console.log(this.nombreTorneo);
       console.log(res);
       this.partidos = res.filter((partido: any) => partido.nombreTorneo == this.nombreTorneo && partido.disciplina == "Futbol");
     },(error: any)=>{ 
-            alert('ERROR');
             console.log("ERROR ===", error);
           })
 
