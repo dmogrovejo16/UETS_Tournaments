@@ -27,24 +27,12 @@ export class FutbolEstPage implements OnInit {
             console.log("ERROR ===", error);
           })
   }
-  onButtonClick() {
-    if (this.state="") {
-      this.isButton1Disabled = true; 
-    } else {
-      this.isButton1Disabled = false; 
-    }
 
 
-    this.nombreTorneo = document.getElementById("nombreTor");
-
-    if (this.nombreTorneo  !== null) {
-     var texto = this.nombreTorneo.innerText;
-       
-       localStorage.setItem("NombreTorneo", texto);
-       console.log(texto);
- 
-   } else {
-       console.log("El elemento no fue encontrado.");
-   }
+    obtenerNombre(nombreT:any){
+      this.nombreTorneo=nombreT;
+      localStorage.setItem("NombreTorneo", this.nombreTorneo);
+    
+    
     }
 }

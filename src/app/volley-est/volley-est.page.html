@@ -24,7 +24,7 @@
     <img src="https://cdni.iconscout.com/illustration/premium/thumb/volleyball-3354972-2802291.png?f=webp" alt="">
   </div>
   <div class="tour">
-    <ion-button *ngFor="let torneo of torneos" routerLink="/levels-tournaments-voll-est" color="danger" class="torneo" shape="round" (click)="onButtonClick()" [disabled]="isButton1Disabled"> <div class="torneos_one" id="nombreTor"><div class="txt" >{{torneo.nombreTorneo}}</div></div></ion-button>
+    <ion-button *ngFor="let torneo of torneos" routerLink="/levels-tournaments-voll-est" color="danger" class="torneo" shape="round" (click)="onButtonClick(torneo.nombreTorneo)" [disabled]="isButton1Disabled"> <div class="torneos_one" id="nombreTor"><div class="txt" >{{torneo.nombreTorneo}}</div></div></ion-button>
   
   </div>
   
